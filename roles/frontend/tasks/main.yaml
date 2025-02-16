@@ -36,7 +36,7 @@
 
 - name: copy frontend config
   ansible.builtin.template:
-    src: frontend.conf
+    src: frontend.conf.j2
     dest: /etc/nginx/default.d/frontend.conf
   notify:
   - Restart Nginx
