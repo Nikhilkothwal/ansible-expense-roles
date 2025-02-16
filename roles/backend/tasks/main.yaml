@@ -61,9 +61,9 @@
   community.mysql.mysql_db:
     state: import
     name: all
-    mysql_user: login_user
-    mysql_password: login_password
-    login_host: mysql_host
+    login_user: "{{ mysql_user }}"
+    login_password: "{{ mysql_password }}"
+    login_host: "{{ mysql_host }}"
     target: /app/schema/backend.sql
 
 - name: daemon reload and restart service
