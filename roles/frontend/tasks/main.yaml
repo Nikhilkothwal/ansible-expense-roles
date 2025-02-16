@@ -34,9 +34,9 @@
 #     dest: /usr/share/nginx/html
 #     remote_src: yes
 
-- name: copy frontend config
+- name: copy expense config
   ansible.builtin.template:
-    src: frontend.conf.j2
-    dest: /etc/nginx/default.d/frontend.conf
-  notify:
+    src: expense.conf.j2
+    dest: /etc/nginx/default.d/expense.conf
+  notify: 
   - Restart Nginx
