@@ -8,7 +8,7 @@
     name: nginx
     state: started
     enabled: yes
-    
+
 - name: include common role
   include_role:
     name: common
@@ -39,4 +39,4 @@
     src: frontend.conf
     dest: /etc/nginx/default.d/frontend.conf
   notify:
-    - Restart Nginx
+  - Restart Nginx
