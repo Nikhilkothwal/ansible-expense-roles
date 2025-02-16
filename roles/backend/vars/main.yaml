@@ -1,0 +1,5 @@
+mysql_host: mysql.kothwal.site
+mysql_user: root
+mysql_password: ExpenseApp@1
+app_location: /app
+component: backend
